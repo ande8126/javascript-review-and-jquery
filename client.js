@@ -72,16 +72,13 @@ function removeSpaces( sentence ) {
     let returnString = '';
     //loop thru characters of a string
     for ( let i=0; i<sentence.length; i++ ) {
-        if( verbose ) console.log( sentence.charAt( i ));
+        if( verbose ) console.log( sentence.charAt( i ) );
+            //if there is a space, remove it
         if( sentence.charAt( i ) != ' '){
-            console.log('space found');
-        }//found space
-        else{
-            //not a space
+            // not a space, add to returnString
             returnString+= sentence.charAt( i );
         }
     }//end for
-    //if there is a space, remove it
     //return the string without spaces
     return returnString;
 }//end removeSpaces
